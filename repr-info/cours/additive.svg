@@ -1,0 +1,9 @@
+<svg viewBox="-10 -10 140 140" xmlns="http://www.w3.org/2000/svg">
+    <style>
+	:root { background: black; }
+	circle { mix-blend-mode: screen; }
+    </style>
+    <circle cx="40" cy="40" r="40" fill="red"/>
+    <circle cx="80" cy="40" r="40" fill="lime"/>
+    <circle cx="60" cy="80" r="40" fill="blue"/>
+</svg>
