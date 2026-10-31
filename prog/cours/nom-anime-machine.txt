@@ -1,0 +1,17 @@
+# Le programme « nom d'anime » en code machine ARM64, pour macOS : les octets
+# que le processeur exécute. Chaque instruction tient sur 4 octets ; à côté,
+# en commentaire, l'instruction qu'ils codent, écrite en assembleur.
+
+# --- Les instructions ---
+90 00 80 d2  # mov x16, #0x4
+20 00 80 d2  # mov x0, #0x1
+21 00 00 90  # adrp x1, 4 ; 0x100004000
+21 00 00 91  # add x1, x1, #0x0
+c2 01 80 d2  # mov x2, #0xe
+01 10 00 d4  # svc #0x80
+30 00 80 d2  # mov x16, #0x1
+00 00 80 d2  # mov x0, #0x0
+01 10 00 d4  # svc #0x80
+
+# --- Les données : le texte « Takahashi-san » et un retour à la ligne ---
+54 61 6b 61 68 61 73 68 69 2d 73 61 6e 0a
