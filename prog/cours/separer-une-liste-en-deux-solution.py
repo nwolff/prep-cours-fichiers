@@ -1,0 +1,27 @@
+mois_et_jours = [
+    "janvier", 31,
+    "février", 28,
+    "mars", 31,
+    "avril", 30,
+    "mai", 31,
+    "juin", 30,
+    "juillet", 31,
+    "août", 31,
+    "septembre", 30,
+    "octobre", 31,
+    "novembre", 30,
+    "décembre", 31,
+]
+
+
+liste_mois = []
+liste_jours = []
+
+while mois_et_jours:
+    mois = mois_et_jours.pop(0)
+    jours = mois_et_jours.pop(0)
+    liste_mois.append(mois)
+    liste_jours.append(jours)
+    
+print("Liste des mois:", liste_mois)
+print("Liste des jours:", liste_jours)
